@@ -4,23 +4,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav class="navigation">
-      <div class="header">What's for Dinner?</div>
-      <button class="recipe">ADD A RECIPE</button>
-    </nav>
-    <section class="main">
-      <img class="background" src="/Users/mikes/turing/mod1/projects/whats-for-dinner/assets/burger-friends.jpg">
-      <section class="box1" id="left-box">
-        <ul> 
-          <h1>What are you looking for?</h1>
-          <li>Side</li>
-          <li>Main Dish</li>
-          <li>Dessert</li> 
-          <li>Entire Meal</li>
-          <button class="cook-button">Lets Cook!</button>
-        </ul>
+    <section class="background">
+      <nav class="nav">
+        <section class="nav-title">What's for Dinner?</section>
+        <button class="add-recipe-button">ADD A RECIPE</button>
+      </nav>
+      <section class="primary">      
+        <section class="box">
+          <h1 class="box-title">What are you looking for?</h1>
+          <form>
+            <section class="side"><input type="radio">Side</section>
+            <section class="main-dish"><input type="radio">Main Dish</section>
+            <section class="dessert"><input type="radio">Dessert</section>
+            <section class="entire-meal"><input type="radio">Entire Meal</section>
+          </form>
+          <button class="cook-button">Lets Cook!</button>     
+        </section>
+        <section class="box">cookpot
+        </section>    
       </section>
-      <section class="box1" id="right-box"></section>
     </section>
   </body>
   <script type="text/javascript" src="main.js"></script>
