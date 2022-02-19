@@ -57,7 +57,6 @@ body {
 
 .primary {
 	height: 800px;
-	/* width: 100%; */
 	display: flex;
 	justify-content: space-evenly;
 	align-items: start;
@@ -137,14 +136,14 @@ form {
 .current-dish {
 	font-size: 2em;
 	height: 2em;
-	margin: 0.2em 0 0 0;
+	margin-top: -2;
 }
 
 .dish-header {
 	font-style: italic;
 	font-size: 25;
 	height: 30px;
-	margin: 0;
+	margin-top: -60;
 }
 
 .clear-button {

@@ -20,15 +20,25 @@ letsCookButton.addEventListener('click', function() {
 // Functions: 
 
 function generateRandomDish() {
-
 	var course;
 	for(var i = 0; i < input.length; i++) {
 		if(input[i].checked) {
-			switchPotAndText();
-			course = eval(input[i].value);
-			currentDish.innerHTML = course[random(course)];
+			if(input[i].value === 'entire-meal') {
+				switchPotAndText();
+				unckeckButton(input[i]);
+				entireMeal()
+			} else {
+				switchPotAndText();
+				unckeckButton(input[i]);
+				course = eval(input[i].value);
+				currentDish.innerHTML = course[random(course)];
+			}
 		} 
-	} uncheckButton()
+	} 
+}
+
+function entireMeal() {
+	currentDish.innerHTML = `${mains[random(mains)]} with a side of ${sides[random(sides)]} and ${desserts[random(desserts)]} for dessert!`
 }
 
 function returnCookPot() {
@@ -43,4 +53,6 @@ function switchPotAndText() {
 	clearButton.classList.remove('hidden')
 }
 
-
+function unckeckButton(input) {
+	input.checked = false;
+}
