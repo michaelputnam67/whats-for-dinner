@@ -64,10 +64,10 @@ body {
 }
 
 .box {
-	background-color:rgba(225, 225, 225, .9);
+	background-color: rgba(225, 225, 225, .9);
 	font-size: x-large;
-	height: 500px;
-	width: 600px;
+	height: 20em;
+	width: 25em;
 	margin-top: 60px;
 } 
 
@@ -95,12 +95,12 @@ form {
 .cook-button {
 	background-color: #0fb9b1;
 	border-color: #0fb9b1;
-	width: 230px;
-	height: 90px;
-	border-radius: 10px;
+	width: 145px;
+	height: 38px;
+	border-radius: 5px;
 	margin-bottom: 75px;
-	margin-left: 55px;
-	font-size: 20;
+	margin-left: px;
+	font-size: 15;
 }
 
 #pot {
@@ -108,7 +108,6 @@ form {
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-
 }
 
 .asterick {
@@ -121,15 +120,31 @@ form {
 }
 
 .random-dish {
-	position: absolute;
-	font-size: 50;
-	margin-top: 200px;
-	height: 200px;
-	width: 400px;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+	flex-direction: column;
+	text-align: center;
+  height: 20em;
+  width: 20em;
+
 }
 
 .hidden {
 	display: none;
+}
+
+.current-dish {
+	font-size: 2em;
+	height: 2em;
+	margin: 0.2em 0 0 0;
+}
+
+.dish-header {
+	font-style: italic;
+	font-size: 25;
+	height: 30px;
+	margin: 0;
 }
 
 .clear-button {
