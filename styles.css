@@ -29,26 +29,27 @@ body {
 .nav {
 	border-top: #0fb9b1;
 	background-color: #0fb9b1;
-	height: 50px;
+	height: 80px;
 	display: flex;
 	justify-content: space-between;
 }
 
 .nav-title {
 	padding-left: 20px;
-	padding-top: 15px;
+	padding-top: 20px;
 	font-weight: bold;
-	font-size: larger;
+	font-size: xx-large;
 } 
 
 .add-recipe-button {
-	width: 100px;
-	height: 30px;
-	margin-top: 10px;
-	margin-right: 15px;
+	width: 150px;
+	height: 46px;
+	margin-top: 18px;
+	margin-right: 20px;
 	border-radius: 5px;
 	border:#0fb9b1;
 	font-family: 'Roboto', sans-serif;
+	font-size: larger;
 	background-color: rgba(225, 225, 225, .9);
 }
 
@@ -56,17 +57,16 @@ body {
 
 .primary {
 	height: 800px;
-	/* width: 100%; */
 	display: flex;
 	justify-content: space-evenly;
 	align-items: start;
 }
 
 .box {
-	background-color:rgba(225, 225, 225, .9);
+	background-color: rgba(225, 225, 225, .9);
 	font-size: x-large;
-	height: 500px;
-	width: 600px;
+	height: 20em;
+	width: 25em;
 	margin-top: 60px;
 } 
 
@@ -88,17 +88,18 @@ form {
   flex-direction: column;
 	justify-content: space-between;
 	margin-left: 55px;
+	margin-top: -30px;
 } 
 
 .cook-button {
 	background-color: #0fb9b1;
 	border-color: #0fb9b1;
-	width: 230px;
-	height: 90px;
-	border-radius: 10px;
+	width: 145px;
+	height: 38px;
+	border-radius: 5px;
 	margin-bottom: 75px;
-	margin-left: 55px;
-	font-size: 20;
+	margin-left: px;
+	font-size: 15;
 }
 
 #pot {
@@ -106,7 +107,6 @@ form {
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-
 }
 
 .asterick {
@@ -118,8 +118,44 @@ form {
 	width: 200px;
 }
 
-/* 
+.random-dish {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+	flex-direction: column;
+	text-align: center;
+  height: 20em;
+  width: 20em;
 
+}
 
+.hidden {
+	display: none;
+}
 
-*/ 
+.current-dish {
+	font-size: 2em;
+	height: 2em;
+	margin-top: -2;
+}
+
+.dish-header {
+	font-style: italic;
+	font-size: 25;
+	height: 30px;
+	margin-top: -60;
+}
+
+.clear-button {
+	background-color: #95a5a6;
+	color: white;
+	position: absolute;
+	border: none;
+	font-size: large;
+	border-radius: 7px;
+	width: 95px;
+	height: 45px;
+	margin-bottom: -400px;
+	margin-right: -450px;
+
+}

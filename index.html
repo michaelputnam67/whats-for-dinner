@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <link rel="stylesheet" href="./styles.css">
@@ -13,14 +14,19 @@
         <section class="box" id="form-box">
           <h1 class="box-title">What are you looking for?<span class="asterick">*</span></h1>
           <form>
-            <section class="side"><input type="radio">   Side</section>
-            <section class="main-dish"><input type="radio">   Main Dish</section>
-            <section class="dessert"><input type="radio">   Dessert</section>
-            <section class="entire-meal"><input type="radio">   Entire Meal</section>
+            <label class="side"><input id="1" name='course' type="radio" value="sides">   Side</label>
+            <label class="main-dish"><input id="2" name='course' type="radio" value="mains">   Main Dish</label>
+            <label class="dessert"><input id="3" name='course' type="radio" value="desserts">   Dessert</label>
+            <label class="entire-meal"><input id="4" name='course' type="radio" value="entire-meal">   Entire Meal</label>
+            <button class="cook-button">LET'S COOK!</button>     
           </form>
-          <button class="cook-button">Lets Cook!</button>     
         </section>
         <section class="box" id="pot">
+          <button class="clear-button hidden">CLEAR</button>
+          <section class="random-dish hidden">
+            <h2 class="dish-header">You should make:</h2>
+            <p class="current-dish">Place Holder Text</p>
+          </section>
           <section class="pot">
             <img class="cook-pot" src="/Users/mikes/turing/mod1/projects/whats-for-dinner/assets/cookpot.svg">
           </section>
@@ -28,5 +34,6 @@
       </section>
     </section>
   </body>
+  <script type="text/javascript" src="arrays.js"></script>
   <script type="text/javascript" src="main.js"></script>
 </html>
