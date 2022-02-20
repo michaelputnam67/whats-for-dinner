@@ -6,10 +6,12 @@ var letsCookButton = document.querySelector('.cook-button');
 var input = document.querySelectorAll(`input[name = 'course']`)
 
 //Random number generator:
+
 function random(array) {
 	return Math.floor(Math.random() * array.length);
 }
 // event listeners:
+
 clearButton.addEventListener('click', returnCookPot)
 
 letsCookButton.addEventListener('click', function() {
